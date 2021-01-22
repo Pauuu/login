@@ -1,0 +1,56 @@
+:root{
+    /* variables */
+    --light-blue: #9effb8;
+    --dark-blue: #89aee1;
+    --pink: #d46ce7;
+    --pinky: #f6a3ef;
+    --yellow: #e9f259;
+    --old-yellow: #eecd69;
+    --turquese: #7cf4d3;
+}
+
+body {
+    background-color: var(--turquese);
+    color: #f89c65;
+    
+    font-family: sans-serif;
+}
+
+button {
+    margin-top: 1.2rem;
+    height: 3rem;
+    border-radius: 100%;
+
+    background-color: var(--pink);
+    color: var(--old-yellow);
+
+    font-family: sans-serif;
+    font-size: larger;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: grid; 
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--dark-blue);
+ 
+    width: 20rem;
+    padding: 5rem;
+}
+
+input, select, textarea {
+    background-color: var(--yellow);
+    color: var(--pink);
+
+    font-size: large;
+    
+    width: 15rem;
+    height: 1.2rem;
+}
