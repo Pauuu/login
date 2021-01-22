@@ -29,19 +29,20 @@ button {
 }
 
 .container{
+
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 50rem;
 }
 
 form {
     display: grid; 
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     background-color: var(--dark-blue);
- 
-    width: 20rem;
+
     padding: 5rem;
 }
 
