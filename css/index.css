@@ -21,8 +21,7 @@
 }
 
 html, body {
-    /* background-color: var(--turquese); */
-    color: #f89c65;
+    color: var(--light-blue);
     font-family: sans-serif;
     height: 100%;
     margin: 0px;
