@@ -44,8 +44,6 @@ html, body {
     font-family: sans-serif;
     height: 100%;
     margin: 0px;
-    cursor: url("../assets/normal.cur"), default;
-
 }
 
 button {
