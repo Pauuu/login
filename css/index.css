@@ -1,4 +1,4 @@
-:root{
+:root {
     /* variables */
     --light-blue: #9effb8;
     --dark-blue: #89aee1;
@@ -9,49 +9,61 @@
     --turquese: #7cf4d3;
 }
 
-body {
-    background-color: var(--turquese);
+/* animations */
+
+@keyframes body-background {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+html, body {
+    /* background-color: var(--turquese); */
     color: #f89c65;
-    
     font-family: sans-serif;
+    height: 100%;
+    margin: 0px;
+    background-image: url("../img/starsbackground.jpg");
+    background-repeat: repeat;
+    animation-name: body-background;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 button {
     margin-top: 1.2rem;
     height: 3rem;
     border-radius: 100%;
-
     background-color: var(--pink);
     color: var(--old-yellow);
-
     font-family: sans-serif;
     font-size: larger;
 }
 
-.container{
-
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50rem;
+    height: 100%;
+    position: relative;
 }
 
 form {
-    display: grid; 
+    display: grid;
     align-items: center;
     justify-content: center;
-
     background-color: var(--dark-blue);
-
     padding: 5rem;
 }
 
 input, select, textarea {
     background-color: var(--yellow);
     color: var(--pink);
-
     font-size: large;
-    
     width: 15rem;
     height: 1.2rem;
 }
